@@ -18,9 +18,11 @@
   --h2-font: 2.2rem;
   --p-font: 1rem;
 }
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 header {
   display: flex;
