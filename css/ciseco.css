@@ -18,7 +18,10 @@
   --h2-font: 2.2rem;
   --p-font: 1rem;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -29,7 +32,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 17px 11%;
-  background-color: transparent;
   position: fixed;
   z-index: 1000000;
   right: 0;
@@ -149,6 +151,7 @@ section {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
   align-items: center;
+  width: 100%;
 }
 .home-img img {
   max-width: 100%;
@@ -160,7 +163,7 @@ section {
 }
 .home-text h2 {
   text-transform: capitalize;
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 .home-text .btn {
@@ -187,7 +190,7 @@ section {
 }
 .contaner-about {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   grid-gap: 2rem;
   align-items: center;
   margin: 5rem auto;
@@ -197,7 +200,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 30px;
+  padding: 40px 10px;
   background-color: #e3ffe6;
   transition: all 0.45s ease;
   gap: 20px;
@@ -568,9 +571,7 @@ section {
   .icon-header {
     left: 35%;
   }
-  .home-img img {
-    margin-left: 12%;
-  }
+
   .home-text h2 {
     font-size: 35px;
   }
@@ -608,6 +609,13 @@ section {
     margin-left: 25px;
   }
 }
+@media (max-width: 543px) {
+  .icon-header {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 @media (max-width: 480px) {
   .home-text h2 {
     font-size: 20px;
@@ -620,7 +628,10 @@ section {
   .row-text h2 {
     font-size: 20px;
   }
-  .icon-header {
-    display: none;
+}
+@media (max-width: 411px) {
+  section {
+    padding: 100px 0;
+    width: 100%;
   }
 }
