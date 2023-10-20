@@ -43,7 +43,6 @@ header {
 header.active {
   box-shadow: 0 0px 15px rgba(0, 0, 0, 0.7);
 }
-
 header .logo {
   width: 100%;
   height: auto;
@@ -143,7 +142,7 @@ ul li:hover a span:nth-child(2) {
 /* end header */
 /* start home */
 section {
-  padding: 100px 11% 90px;
+  padding: 100px 11% 90px 11%;
 }
 .home {
   background-color: #e3ffe6;
@@ -181,6 +180,9 @@ section {
 }
 /* end header */
 /* start home */
+.about {
+  padding: 20px;
+}
 .about .heading {
   text-transform: capitalize;
   font-size: 30px;
@@ -191,9 +193,9 @@ section {
 .contaner-about {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  grid-gap: 2rem;
   align-items: center;
-  margin: 5rem auto;
+  padding: 20px;
+  gap: 10px;
 }
 .row {
   border: 1px solid black;
@@ -263,7 +265,7 @@ section {
 .shop-contaner {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, auto));
-  grid-gap: 2rem;
+  grid-gap: 10px;
   align-items: center;
   margin: 10% auto;
 }
@@ -402,7 +404,7 @@ section {
     padding: 17px 8%;
   }
 }
-@media (max-width: 1410px) {
+@media (max-width: 1422px) {
   header {
     padding: 17px 4%;
   }
@@ -446,7 +448,6 @@ section {
   .navlist.active li a {
     color: #fff;
   }
-
   .toggel span {
     display: block;
     z-index: 1000;
@@ -467,17 +468,13 @@ section {
   .row .row-text h2 {
     margin: 10px 0;
   }
-  .shop-contaner {
-    margin-left: 8%;
-    grid-row-gap: 80px;
-  }
   .inbox {
     padding: 0 20px;
   }
   .contaner h3,
   .contaner h4 {
     margin-left: 5%;
-    font-size: 25px;
+    font-size: 20px;
   }
   .practice {
     font-size: 20px;
@@ -496,7 +493,6 @@ section {
     text-align: center;
   }
 }
-
 @media (max-width: 940px) {
   header {
     padding: 17px 4%;
@@ -526,7 +522,6 @@ section {
   .home-text h2 {
     font-size: 30px;
   }
-
   .row .row-img img {
     width: 200px;
   }
@@ -566,12 +561,10 @@ section {
     width: 80%;
   }
 }
-
 @media (max-width: 610px) {
   .icon-header {
     left: 35%;
   }
-
   .home-text h2 {
     font-size: 35px;
   }
@@ -582,9 +575,6 @@ section {
   .shop-heading {
     margin-left: 30px;
     font-size: 20px;
-  }
-  .shop-contaner {
-    margin-left: 50px;
   }
   .poges-text {
     width: 80%;
@@ -615,7 +605,6 @@ section {
     visibility: hidden;
   }
 }
-
 @media (max-width: 480px) {
   .home-text h2 {
     font-size: 20px;
@@ -624,12 +613,11 @@ section {
     font-size: 20px;
     margin-top: 50px;
   }
-
   .row-text h2 {
     font-size: 20px;
   }
 }
-@media (max-width: 411px) {
+@media (max-width: 420px) {
   section {
     padding: 100px 0;
     width: 100%;
